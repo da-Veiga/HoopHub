@@ -46,7 +46,7 @@ A HoopHub será uma plataforma web destinada à criação, organização e acomp
 | Interface                      | HTML5, CSS3, JavaScript e Bootstrap        
 | Servidor                       | Java com Spring Boot                       
 | Base de dados                  | MySQL                                      
-| Controlo de versões            | Git e GitHub                                                                        |
+| Controlo de versões            | Git e GitHub                                                                        
 | Ferramentas de desenvolvimento | IntelliJ IDEA ou Eclipse e MySQL Workbench 
 
 ## Base de dados (tabelas previstas)
@@ -59,3 +59,22 @@ A HoopHub será uma plataforma web destinada à criação, organização e acomp
 - `Jogos` — confrontos, rondas, datas, equipas participantes e resultados.
 - `Estatisticas` — estatísticas dos jogadores e das equipas.
 - `Multimedia` — links para fotografias e vídeos dos jogos.
+
+## Planeamento
+
+| Fase | Período | Estado |
+| --- | --- | --- |
+| Análise e modelação da base de dados | Novembro 2026 | Por fazer |
+| Desenvolvimento do núcleo mínimo | Dezembro 2026 – março 2027 | Por fazer |
+| Desenvolvimento de funcionalidades extra | Março – abril 2027 | Por fazer |
+| Testes e correções | Abril – maio 2027 | Por fazer |
+| Relatório e apresentação | Maio – junho 2027 | Por fazer |
+| Revisão final e preparação da entrega | Julho 2027 | Por fazer |
+
+## Registo de progresso
+
+- 29/10/2026 – Definição da ideia principal da PAP e das funcionalidades da plataforma HoopHub.
+- 29/10/2026 – Planeamento inicial das tecnologias, da base de dados e das fases de desenvolvimento.
+- [] – Criação do repositório no GitHub e apresentação do projeto ao professor orientador.
+- [] – Conclusão da modelação da base de dados.
+- [] – Início do desenvolvimento da aplicação.
