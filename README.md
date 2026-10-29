@@ -1,20 +1,61 @@
+# HoopHub
 
-# Proposta de PAP — HoopHub
+**PAP 2027 – TGPSI, Escola Secundária de Vergílio Ferreira**
+Aluno: Samuel Cunha · Turma 12.º 13.ª · N.º 23
+Professor orientador: Jorge Silva
 
-A minha ideia para a Prova de Aptidão Profissional (PAP) é desenvolver a **HoopHub**, uma plataforma web destinada à criação, organização e acompanhamento de torneios de basquetebol.
+## Descrição
 
-O objetivo principal deste projeto é facilitar a organização de torneios, permitindo que qualquer pessoa possa criar um evento, definir o formato da competição (1v1, 3v3 ou 5v5), indicar o local, a data, o horário, o número máximo de equipas e, opcionalmente, os prémios.
+A HoopHub será uma plataforma web destinada à criação, organização e acompanhamento de torneios de basquetebol. Permitirá que os organizadores criem torneios, definam o formato da competição (1v1, 3v3 ou 5v5), o local, a data, os horários, o número de vagas e, opcionalmente, os prémios. Os utilizadores poderão criar contas, formar equipas e inscrever-se nos torneios disponíveis. A plataforma permitirá também acompanhar os jogos, consultar resultados e classificações, facilitando a comunicação entre organizadores, equipas e jogadores.
 
-Os utilizadores poderão criar uma conta, formar ou integrar equipas e inscrever-se nos torneios disponíveis. A plataforma terá diferentes tipos de utilizadores, nomeadamente jogadores, organizadores e administradores, cada um com permissões específicas.
+## Objetivos
 
-Uma das principais funcionalidades será a possibilidade de gerar automaticamente os jogos e as eliminatórias, de acordo com o número de equipas inscritas e o formato escolhido. Os organizadores poderão publicar os resultados após cada partida, permitindo atualizar automaticamente as classificações e determinar quais as equipas que avançam para a fase seguinte.
+- Desenvolver uma plataforma intuitiva e responsiva para a gestão de torneios de basquetebol.
+- Implementar sistemas de registo, autenticação e gestão de permissões dos utilizadores.
+- Permitir a criação de torneios, a gestão de equipas e o controlo das inscrições.
+- Automatizar a geração de jogos e eliminatórias, bem como a atualização dos resultados e classificações.
+- Aplicar conhecimentos de programação, bases de dados e desenvolvimento web adquiridos ao longo do curso.
 
-A HoopHub também permitirá consultar informações sobre os torneios, pesquisar eventos por localização, data ou formato, acompanhar os resultados, visualizar estatísticas das equipas e dos jogadores e consultar fotografias e vídeos dos jogos. Pretendo ainda desenvolver um painel de controlo para os organizadores, onde poderão gerir inscrições, horários, resultados e o estado geral dos seus torneios. Outras funcionalidades, como notificações e listas de espera, poderão ser acrescentadas durante o desenvolvimento.
+## Funcionalidades
 
-Relativamente às tecnologias, pretendo utilizar **Java com Spring Boot** para o backend, responsável pela lógica e pelo funcionamento da aplicação, **MySQL** para a gestão da base de dados e **HTML, CSS, Bootstrap e JavaScript** para desenvolver uma interface moderna, intuitiva e adaptada a computadores e dispositivos móveis. Utilizarei também o **GitHub** para guardar o código, acompanhar as alterações e gerir as diferentes versões do projeto.
+### Núcleo mínimo (obrigatório)
 
-O desenvolvimento será realizado por etapas, começando pelo planeamento, desenho da interface e estruturação da base de dados. Posteriormente, serão implementados os sistemas de autenticação, gestão de equipas, criação de torneios e inscrições. Numa fase seguinte, serão desenvolvidos os sistemas de geração de jogos, resultados, classificações e estatísticas. Por fim, serão realizados testes, correções, melhorias visuais e a preparação da documentação e apresentação final.
+- [ ] Registo, início de sessão e gestão de perfis de utilizador.
+- [ ] Criação, edição e consulta de torneios.
+- [ ] Pesquisa de torneios por data, localização e formato.
+- [ ] Criação e gestão de equipas e respetivos jogadores.
+- [ ] Inscrição de equipas nos torneios, com controlo de vagas e inscrições duplicadas.
+- [ ] Gestão de jogos e publicação de resultados pelos organizadores.
+- [ ] Base de dados para guardar utilizadores, equipas, torneios, inscrições e resultados.
+- [ ] Diferentes permissões para jogadores, organizadores e administradores.
 
-O objetivo é concluir o projeto até meados de julho de 2027, procurando desenvolver uma aplicação funcional, segura e bem estruturada, que demonstre os conhecimentos adquiridos ao longo do curso de Técnico de Gestão e Programação de Sistemas Informáticos.
+### Extras (se houver tempo)
 
-Considero que a HoopHub poderá ser um projeto interessante, uma vez que combina o desenvolvimento web, a programação em Java, a gestão de bases de dados e a implementação de algoritmos, procurando oferecer uma solução prática para a organização de competições de basquetebol.
+- [ ] Geração automática de calendários, confrontos e eliminatórias.
+- [ ] Atualização automática das classificações e passagem dos vencedores à ronda seguinte.
+- [ ] Estatísticas individuais dos jogadores e das equipas.
+- [ ] Publicação de fotografias e links para vídeos dos jogos.
+- [ ] Sistema de notificações sobre horários, resultados e alterações nos torneios.
+- [ ] Listas de espera para torneios com inscrições esgotadas.
+- [ ] Painel de controlo com estatísticas e informações para os organizadores.
+
+## Tecnologias
+
+| Camada                         | Tecnologia                                 
+| ------------------------------ | ------------------------------------------ 
+| Interface                      | HTML5, CSS3, JavaScript e Bootstrap        
+| Servidor                       | Java com Spring Boot                       
+| Base de dados                  | MySQL                                      
+| Controlo de versões            | Git e GitHub                                                                        |
+| Ferramentas de desenvolvimento | IntelliJ IDEA ou Eclipse e MySQL Workbench 
+
+## Base de dados (tabelas previstas)
+
+- `Utilizadores` — dados das contas, credenciais e tipo de utilizador.
+- `Equipas` — nome, logótipo e capitão de cada equipa.
+- `Jogadores_Equipas` — associação entre jogadores e equipas.
+- `Torneios` — nome, descrição, formato, local, data, horários e prémios.
+- `Inscricoes` — equipas inscritas, torneios associados e estado da inscrição.
+- `Jogos` — confrontos, rondas, datas, equipas participantes e resultados.
+- `Estatisticas` — estatísticas dos jogadores e das equipas.
+- `Multimedia` — links para fotografias e vídeos dos jogos.
